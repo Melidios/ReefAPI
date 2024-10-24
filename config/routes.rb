@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :stores do
-    resources :items do
-      resources :ingredients
+    member do
+      get 'total_items'
     end
+    resources :items, only: [:index]
+  end
+
+  resources :items do
+    resources :ingredients
   end
 end

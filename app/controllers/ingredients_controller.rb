@@ -3,7 +3,7 @@ class IngredientsController < ApplicationController
   before_action :set_ingredient, only: [:show, :update, :destroy]
 
   def index
-    @ingredients = @item.ingredients
+    @ingredients = @item.ingredients.page(params[:page]).per(10)
     render json: @ingredients, status: :ok
   end
 
