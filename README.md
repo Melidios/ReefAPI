@@ -42,6 +42,7 @@ Getting started:
     `RAILS_ENV=test rails db:migrate`
     `bundle exec rspec`
     This will create the test database, run migrations, and execute the tests using RSpec.
+
 5. Testing the API Locally
 
 You can now use Postman to test the API endpoints.
