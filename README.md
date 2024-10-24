@@ -18,7 +18,7 @@ Getting started:
 2. Install Ruby Gems
 `bundle install`
 
-3.Set Up PostgreSQL Database
+3. Set Up PostgreSQL Database
  a. Install PostgreSQL
   If you don't have PostgreSQL installed, you can install it as follows:
 
